@@ -1,0 +1,180 @@
+.concerts {
+  padding: 50px 0;
+  background: #0f111a;
+
+  h2 {
+    border: 1px solid #3f4042;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 0;
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+    padding-left: 20px;
+    line-height: 50px;
+    background: #1b1f2d;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .table-wrapper {
+    border: 1px solid #3f4042;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow-y: hidden;
+    max-height: none;
+    overflow-y: auto; 
+    max-height: 400px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+
+    thead tr {
+      height: 50px;
+      border-bottom: 1px solid #3f4042;
+      background: #1b1f2d;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    tbody tr {
+      height: 50px;
+      border-bottom: 1px solid #3f4042;
+      background: #131520;
+    }
+
+    tbody tr:last-child {
+      background: #1b1f2d;
+    }
+
+    th,
+    td {
+      border: none;
+      padding: 14px 8px;
+      text-align: left;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    td button {
+      width: auto;
+    }
+  }
+
+  #load-more {
+    margin-top: 32px;
+    display: block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    background: #ff4d6d;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .btn {
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .btn-pink {
+    background: #ff4d6d;
+  }
+
+  #load-more:hover,
+  .btn-pink:hover {
+    background: #ff2a50;
+  }
+
+  .btn-green {
+    background: #28a745;
+  }
+
+  .btn-green:hover {
+    background: #1e7e34;
+  }
+}
+
+.table-wrapper {
+  border: 1px solid #3f4042;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow-y: auto;
+  max-height: 400px;
+
+  scrollbar-width: thin;
+  scrollbar-color: #ff4d6d #1b1f2d;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+  background: #1b1f2d;
+  border-radius: 20px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background-color: #ff4d6d;
+  border-radius: 10px;
+  border: 2px solid #1b1f2d;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: #ff2a50;
+}
+
+@media (max-width: 768px) {
+  .concerts {
+    table {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    thead tr,
+    tbody tr {
+      display: flex;
+      flex-wrap: wrap;
+      height: auto !important;
+    }
+
+    th,
+    td {
+      flex: 1 1 auto;
+    }
+
+    th:last-child,
+    td:last-child {
+      flex: 0 0 100%;
+    }
+
+    .btn {
+      width: 100%;
+    }
+
+    time,
+    th,
+    td {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

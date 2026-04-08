@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta
+      name="description"
+      content="Гурт «Грим та Грім» — український рок-гурт з потужною енергетикою та живими виступами."
+    />
+    <meta property="og:locale" content="uk_UA" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Грим та Грім — український рок-гурт" />
+    <meta
+      property="og:description"
+      content="Потужний український рок, найближчі концерти та бронювання квитків."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Грим та Грім — український рок-гурт" />
+    <meta
+      name="twitter:description"
+      content="Потужний український рок, найближчі концерти та бронювання квитків."
+    />
+    <title>Грим та Грім</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/src/assets/concert_1.avif"
+      type="image/avif"
+    />
+    <link rel="stylesheet" href="/src/css/styles.css" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
+  </head>
+
+  <body>
+    <noscript
+      >Для коректної роботи сайту увімкніть JavaScript у вашому
+      браузері.</noscript
+    >
+    <load src="/src/partials/header.html"></load>
+    <load src="/src/partials/modal.html"></load>
+    <main>
+      <load src="/src/partials/hero.html"></load>
+
+      <load src="/src/partials/concerts.html"></load>
+
+      <load src="/src/partials/band.html"></load>
+
+      <load src="/src/partials/about.html"></load>
+
+      <load src="/src/partials/contact.html"></load>
+    </main>
+
+    <load src="/src/partials/footer.html"></load>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MusicGroup",
+        "name": "Грим та Грім",
+        "genre": "Rock",
+        "inLanguage": "uk",
+        "email": "booking@lotoplay.ua",
+        "telephone": "+380991234567"
+      }
+    </script>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

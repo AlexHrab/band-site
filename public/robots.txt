@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://grym-ta-grim.com/sitemap.xml

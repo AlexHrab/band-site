@@ -1,0 +1,60 @@
+.hero {
+  background:
+    linear-gradient(rgba(41, 41, 43, 0.6), rgba(41, 41, 43, 0.6)),
+    image-set(
+      url("/src/assets/concert_1.avif") type("image/avif"),
+      url("/src/assets/concert_1.webp") type("image/webp"),
+      url("/src/assets/concert_1.jpg") type("image/jpeg")
+    );
+  background-size: cover;
+  background-position: top center;
+  background-position: 60% 40%;
+  padding: 100px 0;
+
+  h1 {
+    font-weight: 700;
+    font-size: 38px;
+    margin-bottom: 16px;
+  }
+
+  strong {
+    color: rgba(91, 192, 243, 0.991);
+  }
+
+  .concert-btn {
+    padding: 10px 18px;
+    font-weight: 700;
+    font-size: 12px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #e5e90a;
+    box-shadow: 0 0 18px rgba(229, 233, 10, 0.6);
+    border: 1px solid #c0c408;
+    color: black;
+    display: inline-block;
+    margin-top: 16px;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 0 28px rgba(229, 233, 10, 0.85);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    p {
+      text-align: justify;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .hero {
+    .concert-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

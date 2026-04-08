@@ -1,0 +1,147 @@
+@import url("./About.css");
+@import url("./Contact.css");
+@import url("./Band.css");
+@import url("./Concerts.css");
+@import url("./Hero.css");
+@import url("./Header.css");
+@import url("./Footer.css");
+@import url("./modal.css");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background: #05070d;
+  color: #fff;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.app-toast {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  z-index: 99999;
+  transform: translateX(-50%);
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.app-toast--dark {
+  background: #222;
+}
+
+.app-toast--pink {
+  background: #ff4d6d;
+}
+
+.contact-wrapper .btn,
+.modal-window .btn {
+  margin-top: 8px;
+  padding: 10px 18px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  background: #ff4d6d;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-wrapper .btn:hover,
+.modal-window .btn:hover {
+  background: #ff2a50;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 200px;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+@media (max-width: 950px) {
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 50px;
+  }
+
+  .contact-wrapper .btn,
+  .modal-window .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,42 @@
+#about {
+  padding: 30px 0;
+  background: linear-gradient(130deg, #0f111a 0%, #171718 50%, #2c0404 100%);
+
+  #about article p {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 16px;
+  }
+
+  article {
+    margin-top: 16px;
+  }
+
+  img {
+    display: block;
+    border: 1px solid #3f4042;
+    width: 100%;
+  }
+}
+
+.text-image {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  align-items: stretch;
+}
+
+.concert {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 950px) {
+  .text-image {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about article p {
+    text-align: justify;
+  }
+}

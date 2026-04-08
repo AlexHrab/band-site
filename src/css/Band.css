@@ -1,0 +1,94 @@
+.band {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.members-list {
+  margin-top: 36px;
+  display: flex;
+  width: 100%;
+  gap: 40px;
+
+  li {
+    border: 1px solid #3f4042;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+    width: calc((100% - 80px) / 3);
+    height: 220px;
+  }
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    flex-shrink: 0;
+    object-position: 90% 10%;
+  }
+
+  figcaption {
+    flex: 1;
+    background: #0f111a;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+  }
+}
+
+@media (max-width: 950px) {
+  .members-list {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+
+    li {
+      width: 100%;
+      height: 450px;
+    }
+
+    figure {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      margin: 0;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 85%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    figcaption {
+      flex: 1;
+      background: #0f111a;
+      display: flex;
+      align-items: center;
+      padding: 0 12px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .members-list {
+    li {
+      width: 100%;
+      height: 400px;
+    }
+
+    img {
+      width: 100%;
+      height: 85%;
+    }
+  }
+}
