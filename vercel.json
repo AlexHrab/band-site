@@ -6,5 +6,12 @@
       "config": { "distDir": "dist" }
     }
   ],
-  "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
+  "routes": [
+    {
+      "src": "/assets/(.*)",
+      "headers": { "cache-control": "public,max-age=31536000,immutable" },
+      "continue": true
+    },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
 }
