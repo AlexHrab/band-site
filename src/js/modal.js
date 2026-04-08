@@ -81,7 +81,7 @@ export function initModal() {
       (concert) => !concert.booked && concert.date === dateInput.value,
     );
     if (!matching.length)
-      showToast("На цю дату немає доступних концертів!", "pink");
+      showToast("На цю дату немає доступних концертів!", "red");
   });
 
   select.addEventListener("change", () => {
@@ -106,7 +106,7 @@ export function initModal() {
     }
 
     if (!selected) {
-      showToast("Будь ласка, оберіть концерт!", "pink");
+      showToast("Будь ласка, оберіть концерт!", "red");
       return;
     }
 
@@ -140,7 +140,7 @@ export function initModal() {
       renderConcerts();
       showToast(`Концерт у ${selected.city} заброньовано! ✓`, "pink");
     } catch {
-      showToast("Сталася помилка. Спробуй ще раз.", "pink");
+      showToast("Сталася помилка. Спробуй ще раз.", "red");
     }
   });
 

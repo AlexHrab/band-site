@@ -17,9 +17,9 @@ export function initContactForm() {
       if (!res.ok) throw new Error(`Request failed: ${res.status}`);
 
       form.reset();
-      showToast("Повідомлення відправлено! ✓", "dark");
+      showToast("Повідомлення відправлено! ✓", "pink");
     } catch {
-      showToast("Щось пішло не так. Спробуй ще раз.", "dark");
+      showToast("Щось пішло не так. Спробуй ще раз.", "red");
     }
   });
 }

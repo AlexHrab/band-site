@@ -1,6 +1,6 @@
 const TOAST_ID = "app-toast";
 
-export function showToast(message, variant = "dark") {
+export function showToast(message, variant = "pink") {
   const existingToast = document.getElementById(TOAST_ID);
   if (existingToast) {
     existingToast.remove();
