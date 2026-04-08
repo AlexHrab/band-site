@@ -1,4 +1,4 @@
-import { concertsList } from "../assets/concerts-list.js";
+import { concertsList } from "../../public/concerts-list.js";
 import { notifyBookingChanged, openModalWithConcert } from "./concerts.js";
 import {
   getConcertById,

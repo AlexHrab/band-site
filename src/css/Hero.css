@@ -2,9 +2,9 @@
   background:
     linear-gradient(rgba(41, 41, 43, 0.6), rgba(41, 41, 43, 0.6)),
     image-set(
-      url("/src/assets/concert_1.avif") type("image/avif"),
-      url("/src/assets/concert_1.webp") type("image/webp"),
-      url("/src/assets/concert_1.jpg") type("image/jpeg")
+      url("/public/concert_1.avif") type("image/avif"),
+      url("/public/concert_1.webp") type("image/webp"),
+      url("/public/concert_1.jpg") type("image/jpeg")
     );
   background-size: cover;
   background-position: top center;

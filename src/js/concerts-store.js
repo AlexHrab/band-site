@@ -1,13 +1,17 @@
-import { concertsList } from "../assets/concerts-list.js";
+import { concertsList } from "../../public/concerts-list.js";
 
-const concertById = new Map(concertsList.map((concert) => [concert.id, concert]));
+const concertById = new Map(
+  concertsList.map((concert) => [concert.id, concert]),
+);
 
 export function getConcertById(id) {
   return concertById.get(id);
 }
 
 export function getFirstAvailableByDate(date) {
-  return concertsList.find((concert) => !concert.booked && concert.date === date);
+  return concertsList.find(
+    (concert) => !concert.booked && concert.date === date,
+  );
 }
 
 export function loadConcertsState() {
