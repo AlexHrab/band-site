@@ -14,7 +14,7 @@ export function initModal() {
   const modal = document.querySelector(".modal-window");
   const select = document.querySelector("#list");
   const dateInput = document.querySelector("#event-date");
-  const form = modal.querySelector("form");
+  const form = modal?.querySelector("form");
 
   if (!button || !overlay || !modal || !select || !dateInput || !form) return;
   if (overlay.dataset.initialized === "true") return;
@@ -80,7 +80,8 @@ export function initModal() {
     const matching = concertsList.filter(
       (concert) => !concert.booked && concert.date === dateInput.value,
     );
-    if (!matching.length) showToast("На цю дату немає доступних концертів!", "pink");
+    if (!matching.length)
+      showToast("На цю дату немає доступних концертів!", "pink");
   });
 
   select.addEventListener("change", () => {
